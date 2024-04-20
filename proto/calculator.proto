@@ -6,7 +6,8 @@ option go_package = "./pb";
 
 service Calculator {
     rpc Add(CalculationRequest) returns (CalculationResponse);
-  }
+    rpc Divide(CalculationRequest) returns (CalculationResponse);
+}
 
 message CalculationRequest {
     int64 a = 1;
